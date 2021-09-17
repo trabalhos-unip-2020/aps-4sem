@@ -1,12 +1,12 @@
-# coding bubble test
-
+# Bubble Sort
+def bubble_sort(lista):
 
 
 
 
 print('time do bubble')
-#coding merger test
-
+# Merge Sort
+def merge_sort(lista):
 
 
 
