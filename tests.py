@@ -14,7 +14,7 @@ def timeit(name):
     yield
     end = time.time()
     took = end - start
-    print(f"The {name} took {took:.4f}s")
+    print(f"O {name} levou {took:.4f}s")
 
 
 def nearly_sorted_array(size):
@@ -42,7 +42,7 @@ if __name__ == '__main__':
         "merge_sort": merge_sort.sort,
     }
 
-    print("Sorting random array")
+    print("Ordenando Array aleatorio")
     print("-" * 50)
     for name, sort in algorithms.items():
         copy_array = list(normal_array)
@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
         assert copy_array == sorted(normal_array)
 
-    print("\n\nSorting nearly sorted array")
+    print("\n\nClassificando a matriz quase classificada")
     print("-" * 50)
     for name, sort in algorithms.items():
         copy_array = list(nearly_sorted)
@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
         assert copy_array == sorted(nearly_sorted)
 
-    print("\n\nSorting reversed sorted array")
+    print("\n\nClassificando a matriz classificada invertida")
     print("-" * 50)
     for name, sort in algorithms.items():
         copy_array = list(reversed_array)
